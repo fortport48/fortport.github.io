@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #5e6162;
+  color: #f7f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 1rem;
+  user-select: none;
+}
+
+#cb-text {
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  background-color: #065c41;
+  color: #fff;
+  font-weight: 700;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.chat-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 82.5dvh;
+  background-color: #363642;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+.chat-box {
+  overflow-y: auto;
+  flex: 1
+  ;
+  padding: 20px;
+  background-color: #ffffff;
+  border-top: 1px solid #444;
+}
+
+.chat-ctrls {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 10px;
+  background-color: #2b2b2b;
+  border-top: 1px solid #444;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+#userInput {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+  background-color: #2b2b2b;
+  color: #fff;
+  border: 2px solid #5d5959;
+}
+
+#sendButton {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#sendButton:hover {
+  background-color: #0056b3;
+}
+
+.bot, .user {
+  background-color: #0a7744;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.user {
+  background-color: #0b9479;
+  text-align: right;
+}
+
+.bot {
+  position: relative;
+}
+
+.bot button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 12px;
+  background-color: #605c5c;
+  border-radius: 5px;
+  border: 1px solid #444;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, font-size 0.3s ease;
+}
+
+.bot button:hover {
+  background-color: #494848;
+  font-size: 14px;
+}

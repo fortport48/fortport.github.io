@@ -1,74 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your Name - Resume</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Your Name</h1>
-            <p class="title">Your Job Title</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main Body -->
+    <div class="container">
+      <div class="chat-container">
+        <div class="chat-head">
+          <h2 id="cb-text">Chatbot</h2>
         </div>
-    </header>
+        <div class="chat-box" id="chatBox"></div>
+        <div class="chat-ctrls">
+          <input
+            type="text"
+            id="userInput"
+            placeholder="Type your message..."
+          />
+          <!-- <button onclick="sendMessage()">Send</button> -->
+          <button id="sendButton">Send</button>
+        </div>
+      </div>
+    </div>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Brief introduction about yourself, your professional background, and career goals.</p>
-        </div>
-    </section>
-
-    <section id="experience">
-        <div class="container">
-            <h2>Work Experience</h2>
-            <div class="experience-item">
-                <h3>Job Title</h3>
-                <p>Company Name - Dates Worked</p>
-                <p>Key responsibilities and achievements in this role.</p>
-            </div>
-            <div class="experience-item">
-                <h3>Another Job Title</h3>
-                <p>Company Name - Dates Worked</p>
-                <p>Key responsibilities and achievements in this role.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="education">
-        <div class="container">
-            <h2>Education</h2>
-            <div class="education-item">
-                <h3>Degree Title</h3>
-                <p>University Name - Graduation Year</p>
-            </div>
-            <div class="education-item">
-                <h3>Another Degree Title</h3>
-                <p>University Name - Graduation Year</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li>Skill 1</li>
-                <li>Skill 2</li>
-                <li>Skill 3</li>
-                <li>Skill 4</li>
-            </ul>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>Contact: your.email@example.com | Phone: (123) 456-7890</p>
-            <p>&copy; 2024 Your Name</p>
-        </div>
-    </footer>
-</body>
+    <script type="importmap">
+      {
+        "imports": {
+          "@google/generative-ai": "https://esm.run/@google/generative-ai"
+        }
+      }
+    </script>
+    <script type="module" src="script.js"></script>
+  </body>
 </html>
